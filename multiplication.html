@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Multiplication</title>
+</head>
+<body>
+    <h1>Multiplication</h1>
+    <p>Enter two number and press Multiply.</p>
+    <input type="number" id="number1" placeholder="첫 번째 숫자">
+    <input type="number" id="number2" placeholder="두 번째 숫자">
+    <button onclick="multiply()">Multiply</button>
+    <div id="result"></div>
+
+    <script>
+        function multiply() {
+            var num1 = document.getElementById('number1').value;
+            var num2 = document.getElementById('number2').value;
+            var result = num1 * num2;
+            document.getElementById('result').innerText = '결과: ' + result;
+        }
+    </script>
+</body>
+</html>
